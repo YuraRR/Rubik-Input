@@ -43,24 +43,23 @@ const InputContainer = ({
   return (
     <div className={inputContainerClass}>
       <InputLabel {...{ inputId, labelSize, labelText, necessity, infoIcon, asterisk, tooltipText, state }} />
-      <div className={styles.inputField}>
-        <InputField
-          {...{
-            inputId,
-            inputSize,
-            state,
-            quiet,
-            variants,
-            iconBefore,
-            iconAfter,
-            shortkey,
-            placeholder,
-            alignment,
-            necessity,
-          }}
-        />
-        <InputHelperText {...{ helperText, errorMessage }} />
-      </div>
+
+      <InputField
+        {...{
+          inputId,
+          inputSize,
+          state,
+          quiet,
+          variants,
+          iconBefore,
+          iconAfter,
+          shortkey,
+          placeholder,
+          alignment,
+          necessity,
+        }}
+      />
+      <InputHelperText {...{ helperText, errorMessage }} />
     </div>
   );
 };

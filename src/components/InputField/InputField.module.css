@@ -6,51 +6,44 @@
   padding: 0 12px;
   width: 100%;
   border-radius: 4px;
-  border: none;
+  border: 1px solid var(--rubik-border-primary);
+  outline: 1px solid transparent;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .inputWraper {
   display: flex;
   position: relative;
-  border: 1px solid var(--rubik-border-primary);
   border-radius: 4px;
   box-sizing: border-box;
   max-width: 323px;
   min-width: 64px;
 }
 
-.input:focus {
-  outline: 1px solid var(--rubik-border-brand);
-  box-shadow: 0px 0px 0px 4px #2e90fa3d;
+.input:focus,
+.focus .input {
+  border: 1px solid var(--rubik-border-brand);
+  box-shadow: 0px 0px 0px 4px var(--rubik-border-brand-shadow);
 }
 
-.input.focus {
-  outline: 1px solid var(--rubik-border-brand);
-  box-shadow: 0px 0px 0px 4px #2e90fa3d;
-}
-
-.input.error {
-  outline: 1px solid var(--rubik-border-error);
-}
-.input.error svg {
+.error .iconBefore svg path,
+.error-focus .iconBefore svg path,
+.error .iconAfter svg path,
+.error-focus .iconAfter svg path {
   stroke: var(--rubik-fg-error-primary);
-}
-
-.input.error-focus {
-  outline: 1px solid var(--rubik-border-error);
-  box-shadow: 0px 0px 0px 4px #f044383d;
 }
 
 .input.disabled {
   color: var(--rubik-text-disabled);
   cursor: not-allowed;
 }
-.input.error:focus {
-  box-shadow: 0px 0px 0px 4px #f044383d;
+.error .input:focus,
+.error-focus .input {
+  box-shadow: 0px 0px 0px 4px var(--rubik-border-error-shadow);
 }
-.error .input {
-  outline: 1px solid var(--rubik-border-error);
+.error .input,
+.error-focus .input {
+  border: 1px solid var(--rubik-border-error);
 }
 
 .size-24 {
@@ -107,11 +100,6 @@
   cursor: pointer;
   width: 16px;
   height: 16px;
-}
-
-.error .iconBefore svg path,
-.error .iconAfter svg path {
-  stroke: var(--rubik-fg-error-primary);
 }
 
 .iconAfterAndShortkey {
