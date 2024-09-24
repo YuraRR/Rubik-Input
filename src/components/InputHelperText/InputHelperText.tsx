@@ -4,13 +4,13 @@ import classNames from "classnames";
 export interface HelperTextProps {
   helperText?: string;
   errorMessage?: string;
-  disabled?: boolean;
+  state?: "default" | "focus" | "error" | "error-focus" | "disabled";
 }
 
-const InputHelperText = ({ helperText, errorMessage, disabled }: HelperTextProps) => {
+const InputHelperText = ({ helperText, errorMessage, state }: HelperTextProps) => {
   const helperTextClass = classNames(styles.helperText, {
     [styles.errorMessage]: errorMessage,
-    [styles.disabled]: disabled,
+    [styles.disabled]: state == "disabled",
   });
 
   return (

@@ -45,8 +45,6 @@ export const Default: Story = {
     infoIcon: true,
     helperText: "This is a hint text to help user.",
     tooltipText: "This is a hint text to help user.",
-    required: false,
-    disabled: false,
     inputSize: 36,
     labelPosition: "top",
   },

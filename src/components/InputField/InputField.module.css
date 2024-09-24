@@ -13,7 +13,7 @@
 .inputWraper {
   display: flex;
   position: relative;
-  border: 1px solid #ccc;
+  border: 1px solid var(--rubik-border-primary);
   border-radius: 4px;
   box-sizing: border-box;
   max-width: 323px;
