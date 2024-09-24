@@ -1,0 +1,30 @@
+@import "../../index.css";
+
+.tooltip {
+  position: absolute;
+  bottom: 170%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--rubik-bg-primary-solid);
+  color: var(--rubik-tooltip-text);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--rubik-font);
+  padding: 8px 12px;
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: var(--tooltip-opacity, 0);
+  visibility: var(--tooltip-visibility, hidden);
+  transition: opacity 0.5s ease;
+  z-index: 999;
+}
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: var(--rubik-bg-primary-solid) transparent transparent transparent;
+}

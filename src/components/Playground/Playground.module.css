@@ -1,0 +1,12 @@
+@import "../../index.css";
+
+.playground,
+.playgroundDark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 314px;
+}
+.playgroundDark {
+  background-color: var(--rubik-bg-primary-solid);
+}

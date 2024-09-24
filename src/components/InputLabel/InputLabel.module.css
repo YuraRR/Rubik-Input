@@ -1,0 +1,57 @@
+@import "../../index.css";
+@import "../ToolTip/Tooltip.module.css";
+
+.label {
+  display: flex;
+  align-items: center;
+  font-family: var(--rubik-font);
+  font-weight: 500;
+  word-wrap: break-word;
+  white-space: normal;
+  max-width: 323px;
+  color: var(--rubik-text-primary);
+}
+
+.infoBlock {
+  height: 12px;
+}
+
+.labelWrapper {
+  display: flex;
+  gap: 4px;
+  font-family: var(--rubik-font);
+  color: var(--rubik-text-primary);
+  font-weight: 500;
+}
+.labelText {
+  padding-right: 4px;
+}
+.disabled {
+  color: var(--rubik-quaternary);
+}
+.size-24,
+.size-32,
+.size-36 {
+  font-size: 12px;
+}
+
+.size-40,
+.size-44,
+.size-48 {
+  font-size: 14px;
+}
+.asterisk {
+  color: var(--rubik-fg-error-dark);
+  font-size: 12px;
+}
+.infoBlock {
+  position: relative;
+  width: fit-content;
+}
+.infoBlock:hover {
+  --tooltip-opacity: 1;
+  --tooltip-visibility: visible;
+}
+.infoBlock {
+  cursor: pointer;
+}

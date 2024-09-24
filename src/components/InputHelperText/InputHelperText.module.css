@@ -1,0 +1,13 @@
+@import "../../index.css";
+
+.helperText {
+  position: absolute;
+  font-family: var(--rubik-font);
+  color: var(--rubik-text-tertiary);
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+.errorMessage {
+  color: var(--rubik-fg-error-primary);
+}

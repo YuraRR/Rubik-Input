@@ -1,0 +1,148 @@
+@import "../../index.css";
+
+.input {
+  font-size: 12px;
+  font-family: var(--rubik-font);
+  padding: 0 12px;
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.inputWraper {
+  display: flex;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  max-width: 323px;
+  min-width: 64px;
+}
+
+.input:focus {
+  outline: 1px solid var(--rubik-border-brand);
+  box-shadow: 0px 0px 0px 4px #2e90fa3d;
+}
+
+.input.focus {
+  outline: 1px solid var(--rubik-border-brand);
+  box-shadow: 0px 0px 0px 4px #2e90fa3d;
+}
+
+.input.error {
+  outline: 1px solid var(--rubik-border-error);
+}
+.input.error svg {
+  stroke: var(--rubik-fg-error-primary);
+}
+
+.input.error-focus {
+  outline: 1px solid var(--rubik-border-error);
+  box-shadow: 0px 0px 0px 4px #f044383d;
+}
+
+.input.disabled {
+  color: var(--rubik-text-disabled);
+  cursor: not-allowed;
+}
+.input.error:focus {
+  box-shadow: 0px 0px 0px 4px #f044383d;
+}
+.error .input {
+  outline: 1px solid var(--rubik-border-error);
+}
+
+.size-24 {
+  height: 24px;
+  padding: 2px 12px;
+}
+
+.size-32 {
+  height: 32px;
+  padding: 6px 12px;
+}
+
+.size-36 {
+  height: 36px;
+  padding: 8px 16px;
+}
+
+.size-40 {
+  height: 40px;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+
+.size-44 {
+  height: 44px;
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+.size-48 {
+  height: 48px;
+  padding: 12px 16px;
+  font-size: 14px;
+}
+.quiet {
+  border: 1px solid transparent;
+}
+
+.fill {
+  background-color: var(--rubik-bg-primary);
+}
+.outline {
+  background-color: transparent;
+}
+
+.iconBefore {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+.iconAfter,
+.iconBefore {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.error .iconBefore svg path,
+.error .iconAfter svg path {
+  stroke: var(--rubik-fg-error-primary);
+}
+
+.iconAfterAndShortkey {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.hasIconBefore {
+  padding-left: 36px;
+}
+.hasIconAfter {
+  padding-right: 32px;
+}
+.hasShortkey {
+  padding-right: 50px;
+}
+.hasIconAfterAndShortkey {
+  padding-right: 74px;
+}
+.alignmentRight {
+  text-align: right;
+}
+.shortkey {
+  font-family: var(--rubik-font);
+  font-size: 12px;
+  color: var(--rubik-utility-gray);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 2px 4px;
+}

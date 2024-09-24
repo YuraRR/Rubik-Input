@@ -1,0 +1,23 @@
+@import "../../index.css";
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: fit-content;
+  max-width: 323px;
+  width: 100%;
+}
+.positionLeft {
+  flex-direction: row;
+}
+.size-24,
+.size-32,
+.size-36 {
+  margin-bottom: 18px;
+}
+
+.size-40,
+.size-44,
+.size-48 {
+  margin-bottom: 20px;
+}
