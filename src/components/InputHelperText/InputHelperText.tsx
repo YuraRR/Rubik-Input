@@ -13,11 +13,7 @@ const InputHelperText = ({ helperText, errorMessage, state }: HelperTextProps) =
     [styles.disabled]: state == "disabled",
   });
 
-  return (
-    <div className={styles.helperWrapper}>
-      <span className={helperTextClass}>{errorMessage ? errorMessage : helperText}</span>
-    </div>
-  );
+  return <span className={helperTextClass}>{errorMessage ? errorMessage : helperText}</span>;
 };
 
 export default InputHelperText;
