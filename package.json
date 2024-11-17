@@ -1,9 +1,11 @@
 {
   "name": "storybook-input",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.1.0",
+  "main": "dist/assets/index-D2cBTyE5.js",
   "type": "module",
   "homepage": "https://YuraRR.github.io/Rubik-Input",
+  "author": "Yurar",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
